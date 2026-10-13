@@ -1,0 +1,2 @@
+import StaticPage from './StaticPage'
+export default function About(){ return <StaticPage eyebrow="Nuestra esencia" title="Repostería con intención"><p>AURUM Sweet Alchemy nace de la idea de convertir ingredientes selectos en piezas memorables.</p><p>Este frontend demuestra la identidad visual, navegación y experiencia de compra que posteriormente se conectarán al backend y a SQL Server.</p></StaticPage> }

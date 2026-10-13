@@ -1,0 +1,13 @@
+import { Route, Routes } from 'react-router-dom'
+import PublicLayout from '../layouts/PublicLayout'
+import Home from '../pages/public/Home'
+import Catalog from '../pages/public/Catalog'
+import ProductDetail from '../pages/public/ProductDetail'
+import Cart from '../pages/public/Cart'
+import About from '../pages/public/About'
+import Branches from '../pages/public/Branches'
+import Contact from '../pages/public/Contact'
+import Login from '../pages/public/Login'
+import Register from '../pages/public/Register'
+import NotFound from '../pages/NotFound'
+export default function AppRouter(){ return <Routes><Route element={<PublicLayout/>}><Route index element={<Home/>}/><Route path="catalogo" element={<Catalog/>}/><Route path="producto/:slug" element={<ProductDetail/>}/><Route path="carrito" element={<Cart/>}/><Route path="nosotros" element={<About/>}/><Route path="sucursales" element={<Branches/>}/><Route path="contacto" element={<Contact/>}/><Route path="login" element={<Login/>}/><Route path="registro" element={<Register/>}/></Route><Route path="*" element={<NotFound/>}/></Routes> }
